@@ -12,6 +12,8 @@ public class StringExplorer {
 		//  Demonstrate the indexOf method.
 		int position = sample.indexOf("quick");
 		System.out.println ("sample.indexOf(\"quick\") = " + position);
+		int position2 = sample.indexOf("the", 4);
+		System.out.println ("sample.indexOf(\"the\", 4) = " + position2);
 
 		//  Demonstrate the toLowerCase method.
 		String lowerCase = sample.toLowerCase();
@@ -19,7 +21,8 @@ public class StringExplorer {
 		System.out.println ("After toLowerCase(), sample = " + sample);
 
 		//  Try other methods here:
-
+		int notFoundPsn = sample.indexOf("slow");
+		System.out.println("sample.indexOf(\"slow\") = " + notFoundPsn);
 	}
 
 }
